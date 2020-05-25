@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/5f882204a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <!-- LANDING PAGE -->
+    <div class="landing-page">
+      <div class="dark-overlay">
+        <!-- HEADER -->
+        <nav
+          class="navbar navbar-expand-sm navbar-dark bg-transparent sticky-top"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><div class="text">PORTFOLIO</div></a
+            >
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="row face rounded p-5">
+            <div class="col-md-6 animate__fadeInRight animate__animated">
+              <h1 class="display-4 text-white">
+                Hi, I'm <strong>Saksham Kumar</strong>, great to meet you!
+              </h1>
+              <div class="icons mt-5">
+                <a href="https://www.twitter.com" class="text-white"
+                  ><i class="fab fa-twitter fa-2x mr-5 pb-2"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/sakshamk98"
+                  class="text-white"
+                  ><i class="fab fa-instagram fa-2x mr-5 pb-2"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/sakshamkumarcs98"
+                  class="text-white"
+                  ><i class="fab fa-linkedin fa-2x mr-5 pb-2"></i
+                ></a>
+                <a href="https://www.github.com/sakshamk88" class="text-white"
+                  ><i class="fab fa-github fa-2x pb-2"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center">
+                <img
+                  class="animate__fadeInRight animate__animated"
+                  src="img/image-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text-center m-5">
+                <button
+                  class="btn btn-lg btn-outline-light px-4 animate__fadeInRight animate__animated"
+                >
+                  <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                  Know more!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <!-- HOME SECTION -->
+    <section id="home-section"></section>
+
+    <!-- UTILITY SCRIPTS -->
+    <script>
+      $("#main-nav a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>

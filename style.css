@@ -1,0 +1,42 @@
+.landing-page {
+  margin: 0;
+  height: 100vh;
+  background-image: url("img/forest-gif.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark-overlay {
+  margin: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+.text {
+  font-family: Gabriela, serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 1);
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 0em;
+  letter-spacing: 10.2px;
+}
+.clr {
+  color: ghostwhite;
+}
+.face {
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.lnks {
+  border-radius: 20px;
+}
+.icons a i:hover {
+  border-bottom: 1px solid whitesmoke;
+  transition-duration: 0.5s;
+}
+.nav-link:hover {
+  color: aliceblue;
+  background-color: darkgray;
+  transition-duration: 0.3s;
+}
